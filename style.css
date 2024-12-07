@@ -37,7 +37,7 @@
     background: black;
     position: absolute;
     bottom: -10px;
-    left: 0;
+    left: -20px;
     transform: scaleX(0);
     transition: 0.3s;
 }
@@ -45,6 +45,7 @@
     transform: scaleX(1);
     color: aqua;
     background: aqua;
+    left: 0;
 }
 .header-right-item {
     position: relative;
