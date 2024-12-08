@@ -6,6 +6,7 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -16,13 +17,16 @@
     padding: 0 20px;
     background: white;
 }
+
 .header-left {
     font-size: 35px;
     font-weight: 100;
 }
+
 .header-left a {
     color: black;
 }
+
 .header-right {
     display: flex;
     gap: 40px;
@@ -30,6 +34,7 @@
     align-items: center;
     position: relative;
 }
+
 .header-right a::after {
     content: "";
     width: 50%;
@@ -41,52 +46,63 @@
     transform: scaleX(0);
     transition: 0.3s;
 }
+
 .header-right a:hover::after {
     transform: scaleX(1);
     color: aqua;
     background: aqua;
     left: 0;
 }
+
 .header-right-item {
     position: relative;
 }
+
 .header-right a {
     color: black;
     transition: 0.3s;
 }
+
 .header-right a:hover {
     color: aqua;
 }
+
 .header-right-icons {
     display: flex;
     gap: 10px;
     font-size: 20px;
 }
+
 .header-right-icons a {
     color: black;
     transition: 0.3s;
 }
+
 .header-right-icons a:hover {
     color: aqua;
 }
+
 .main {
     width: 100%;
     height: 100vh;
-    background:center/cover url(./img/hero-bg.jpg);
+    background: center/cover url(./img/hero-bg.jpg);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
+
 .main-info1 {
     font-size: 50px;
     font-weight: 100;
 }
+
 .main-info2 {
     font-size: 22px;
     font-weight: 100;
 }
+
 .main button {
     width: 150px;
     height: 40px;
@@ -97,6 +113,7 @@
     font-size: 16px;
     font-weight: 600;
 }
+
 .footer {
     width: 100%;
     height: 200px;
@@ -106,11 +123,13 @@
     justify-content: center;
     gap: 10px;
 }
+
 .footer-icons {
     display: flex;
     gap: 10px;
     font-size: 20px;
 }
+
 .footer-icons a {
     width: 50px;
     height: 50px;
@@ -122,6 +141,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .footer-icons a:hover {
     color: aqua;
     border: 1px solid aqua;
