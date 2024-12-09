@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    padding: 0 20px;
+    background: rgb(233,232,230);
+}
+
+.header-left {
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.header-left a {
+    color: #444;
+}
+
+.header-right {
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    align-items: center;
+    position: relative;
+}
+
+.header-right a::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: black;
+    position: absolute;
+    bottom: -10px;
+    left: -20px;
+    transform: scaleX(0);
+    transition: 0.3s;
+}
+
+.header-right a:hover::after {
+    transform: scaleX(1);
+    color: rgb(52,183,167);
+    background: rgb(52,183,167);
+    left: 0;
+}
+
+.header-right-item {
+    position: relative;
+}
+
+.header-right a {
+    color: #444;
+    transition: 0.3s;
+}
+
+.header-right a:hover {
+    color: rgb(52,183,167);
+}
+
+.header-right-icons {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.header-right-icons a {
+    color: #444;
+    transition: 0.3s;
+}
+
+.header-right-icons a:hover {
+    color: rgb(52,183,167);
+}
+
+.main {
+    width: 100%;
+    height: 80vh;
+    background: white;
+    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-info1 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.line {
+    width: 60px;
+    height: 5px;
+    background: rgb(52,183,167);
+}
+
+.line-item {
+    width: 60px;
+    height: 4px;
+    background: rgb(52,183,167);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.center-left img {
+    width: 420px;
+}
+
+.center-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.center-right-info1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.center-right-info2 {
+    font-size: 20px;
+    width: 1050px;
+}
+
+.center-right-infos {
+    display: flex;
+    gap: 200px;
+}
+
+.center-right-infos-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.center-right-infos-left i {
+    color: rgb(52,183,167);
+}
+
+.center-right-info3 {
+    font-size: 20px;
+    width: 1050px;
+    line-height: 28px;
+}
+
+.section1 {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 100px 0;
+}
+
+.section1-center {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.section1-center-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section1-center-left input {
+    width: 700px;
+}
+
+.df {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2 {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 100px 0;
+}
+
+.section2-center {
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+    margin-top: 100px;
+}
+
+.line1 div {
+    width: 30px;
+    height: 5px;
+    background: rgb(52,183,167);
+}
+
+.section2-center-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sec2-info1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.sec2-info2 {
+    font-size: 16px;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 100px 0;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+.footer-center {
+    width: 500%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+.footer-box1 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.footer-boxs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+}
+.footer-box1 {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    height: 400px;
+}
+.footer-box1-name { 
+    font-size: 20px;
+    font-weight: 700;
+}
+.footer-center-stars {
+    color: yellow;
+}
+.footer-box1-text {
+    font-size: 16px;
+    width: 1000px;
+    text-align: center;
+    line-height: 35px;
+}
+.footer-box1-text span {
+    font-size: 50px;
+    color: rgb(52,183,167);
+}
+.footer2 {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: rgb(233,232,230);
+}
+.footer-icons {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+.footer-icons a {
+    width: 50px;
+    height: 50px;
+    color: black;
+    transition: 0.3s;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icons a:hover {
+    color: rgb(52,183,167);
+    border: 1px solid rgb(52,183,167);
+}
