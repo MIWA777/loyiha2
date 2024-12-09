@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    padding: 0 20px;
+    background: rgb(233,232,230);
+  }
+  
+  .header-left {
+    font-size: 35px;
+    font-weight: 100;
+  }
+  
+  .header-left a {
+    color: #444;
+  }
+  
+  .header-right {
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    align-items: center;
+    position: relative;
+  }
+  
+  .header-right a::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: black;
+    position: absolute;
+    bottom: -10px;
+    left: -20px;
+    transform: scaleX(0);
+    transition: 0.3s;
+  }
+  
+  .header-right a:hover::after {
+    transform: scaleX(1);
+    color: rgb(52,183,167);
+    background: rgb(52,183,167);
+    left: 0;
+  }
+  
+  .header-right-item {
+    position: relative;
+  }
+  
+  .header-right a {
+    color: #444;
+    transition: 0.3s;
+  }
+  
+  .header-right a:hover {
+    color: rgb(52,183,167);
+  }
+  
+  .header-right-icons {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+  }
+  
+  .header-right-icons a {
+    color: #444;
+    transition: 0.3s;
+  }
+  
+  .header-right-icons a:hover {
+    color: rgb(52,183,167);
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 100px;
+    margin-top: 150px;
+  }
+  
+  .ciz {
+    width: 60px;
+    height: 3px;
+    background-color: blue;
+  }
+  
+  .nav h1 {
+    font-size: 40px;
+  }
+  
+  .middle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-left: 70px;
+    margin-bottom: 100px;
+  }
+  
+  .box {
+    width: 400px;
+    height: 300px;
+    background: ;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 20px 0;
+    color: #1a1a1a25;
+  }
+  
+  .text {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    text-align: center;
+    padding-top: 25px;
+    gap: 20px;
+    color: black;
+  }
+  
+  .box:nth-child(1) .text .bi-activity {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: dodgerblue;
+    background-color: #1a1a1a25;
+  }
+  
+  .box:nth-child(1) .text .bi-activity:hover {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  .box:nth-child(2) .text .bi-broadcast {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orangered;
+    background-color: #1a1a1a25;
+  }
+  
+  .box:nth-child(2) .text .bi-broadcast:hover {
+    background-color: orangered;
+    color: white;
+  }
+  
+  .box:nth-child(3) .text .bi-easel {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(47, 255, 172);
+    background-color: #1a1a1a25;
+  }
+  
+  .box:nth-child(3) .text .bi-easel:hover {
+    background-color: rgb(47, 255, 172);
+    color: white;
+  }
+  
+  .box:nth-child(4) .text .bi-bounding-box-circles {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: brown;
+    background-color: #1a1a1a25;
+  }
+  
+  .box:nth-child(4) .text .bi-bounding-box-circles:hover {
+    background-color: brown;
+    color: white;
+  }
+  
+  .box:nth-child(5) .text .bi-calendar4-week {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blueviolet;
+    background-color: #1a1a1a25;
+  }
+  
+  .box:nth-child(5) .text .bi-calendar4-week:hover {
+    background-color: blueviolet;
+    color: white;
+  }
+  
+  .box:nth-child(6) .text .bi-chat-square-text {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(210, 42, 70);
+    background-color: #1a1a1a25;
+  }
+  
+  .box:nth-child(6) .text .bi-chat-square-text:hover {
+    background-color: rgb(210, 42, 70);
+    color: white;
+  }
+  
+  .tag {
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.296);
+    text-align: center;
+    padding-top: 60px;
+    color: #2f2f2f;
+    padding-bottom: 30px;
+  }
+  
+  .tag p a {
+    text-decoration: none;
+    color: rgb(14, 175, 14);
+  }
+  
+  .tag .icon {
+    font-size: 20px;
+  }
+  
+  h4 span {
+    color: black;
+  }
