@@ -15,7 +15,7 @@
     height: 100px;
     position: fixed;
     padding: 0 20px;
-    background: white;
+    background: rgb(233,232,230);
 }
 
 .header-left {
@@ -24,7 +24,7 @@
 }
 
 .header-left a {
-    color: black;
+    color: #444;
 }
 
 .header-right {
@@ -49,8 +49,8 @@
 
 .header-right a:hover::after {
     transform: scaleX(1);
-    color: aqua;
-    background: aqua;
+    color: rgb(52,183,167);
+    background: rgb(52,183,167);
     left: 0;
 }
 
@@ -59,12 +59,12 @@
 }
 
 .header-right a {
-    color: black;
+    color: #444;
     transition: 0.3s;
 }
 
 .header-right a:hover {
-    color: aqua;
+    color: rgb(52,183,167);
 }
 
 .header-right-icons {
@@ -74,12 +74,12 @@
 }
 
 .header-right-icons a {
-    color: black;
+    color: #444;
     transition: 0.3s;
 }
 
 .header-right-icons a:hover {
-    color: aqua;
+    color: rgb(52,183,167);
 }
 
 .main {
@@ -101,13 +101,13 @@
 .line {
     width: 60px;
     height: 5px;
-    background: aqua;
+    background: rgb(52,183,167);
 }
 
 .line-item {
     width: 60px;
     height: 4px;
-    background: aqua;
+    background: rgb(52,183,167);
 }
 
 .center {
@@ -149,7 +149,7 @@
 }
 
 .center-right-infos-left i {
-    color: aqua;
+    color: rgb(52,183,167);
 }
 
 .center-right-info3 {
@@ -209,7 +209,7 @@
 .line1 div {
     width: 30px;
     height: 5px;
-    background: aqua;
+    background: rgb(52,183,167);
 }
 
 .section2-center-info {
@@ -278,7 +278,7 @@
 }
 .footer-box1-text span {
     font-size: 50px;
-    color: aqua;
+    color: rgb(52,183,167);
 }
 .footer2 {
     width: 100%;
@@ -288,6 +288,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    background: rgb(233,232,230);
 }
 .footer-icons {
     display: flex;
@@ -306,6 +307,6 @@
     align-items: center;
 }
 .footer-icons a:hover {
-    color: aqua;
-    border: 1px solid aqua;
+    color: rgb(52,183,167);
+    border: 1px solid rgb(52,183,167);
 }
